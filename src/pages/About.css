@@ -1,0 +1,143 @@
+.about-page {
+  min-height: calc(100vh - 70px);
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.about-section {
+  margin-bottom: 60px;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  color: #1e293b;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.objectives-list,
+.initiatives-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.objectives-list li,
+.initiatives-list li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.objectives-list li:before {
+  content: '■';
+  color: #2563eb;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+}
+
+.initiatives-list li:before {
+  content: '•';
+  color: #2563eb;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 5px;
+}
+
+.vision-section {
+  background-color: #f8fafc;
+  padding: 50px 30px;
+  border-radius: 16px;
+  margin-top: 60px;
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.vision-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.vision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.vision-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.vision-card h3 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.vision-card p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .vision-grid {
+    grid-template-columns: 1fr;
+  }
+}
